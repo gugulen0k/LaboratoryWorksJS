@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 1.4rem;
+        font-family: "Century Gothic";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: rgb(155, 200, 106);
+    }
+
+    .table {
+        display: grid;
+        grid-template-rows: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        border: 0;
+        box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.29);
+        -webkit-box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.29);
+        -moz-box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.29);
+        border-radius: 10px;
+        width: max-content;
+        background: white;
+        overflow: hidden;
+    }
+
+    .numerical-table,
+    .products-table {
+        display: grid;
+        grid-template-rows: repeat(12, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        border: 0;
+        box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.29);
+        -webkit-box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.29);
+        -moz-box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.29);
+        border-radius: 10px;
+        width: max-content;
+        background: white;
+        overflow: hidden;
+    }
+
+    .products-table {
+        grid-template-rows: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .row {
+        display: grid;
+    }
+
+    .first {
+        background: rgb(255, 237, 134);
+        font-weight: bold;
+        color: rgb(50, 54, 47);
+    }
+
+    .second {
+        border-bottom: 1px solid rgb(227, 241, 213);
+    }
+
+    .column {
+        padding: 20px 15px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
