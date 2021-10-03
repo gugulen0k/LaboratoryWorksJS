@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+    <main>
+        <span class="error">Fill in all the fields!</span>
+        <form>
+            <label>
+                Input first point coordinates
+                <div class="coordinates">
+                    <div class="coordinate">
+                        <span>x</span>
+                        <input type="number" id="x1">
+                    </div>
+                    <div class="coordinate">
+                        <span>y</span>
+                        <input type="number" id="y1">
+                    </div>
+                </div>
+            </label>
+            <label>
+                Input second point coordinates
+                <div class="coordinates">
+                    <div class="second">
+                        <span>x</span>
+                        <input type="number" id="x2">
+                    </div>
+                    <div class="second">
+                        <span>y</span>
+                        <input type="number" id="y2">
+                    </div>
+                </div>
+            </label>
+        </form>
+        <button type="button" onclick="distanta()">Calculate</button>
+        <div class="result">
+            <label for="result">
+                <span>Result</span>
+                <input name="result" type="number" readonly id="result">
+            </label>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Date & Time</title>
+  </head>
+  <body>
+    <main>
+      <div class="tasks">
+        <section>
+          <h1>Task #1</h1>
+          <div class="buttons">
+            <button onclick="yearsAgo()">10 years ago</button>
+            <button onclick="yesterday()">yesterday</button>
+            <button onclick="today()">today</button>
+            <button onclick="weekLater()">after a week</button>
+          </div>
+        </section>
+
+        <section class="seconds-until">
+          <h1>Task #2</h1>
+          <button onclick="secondsLeft()">
+            Seconds left until the end of the day ⌛
+          </button>
+        </section>
+
+        <section class="textareas">
+          <h1>Task #3</h1>
+          <div class="text-inputs">
+            <textarea name="input-text" id="input-text" cols="30" rows="10">
+Two words in this text will be replaced</textarea
+            >
+            <textarea
+              name="output-text"
+              id="output-text"
+              cols="30"
+              rows="10"
+              readonly
+            ></textarea>
+          </div>
+          <button onclick="swapWords()">Replace</button>
+        </section>
+
+        <section class="textareas">
+          <h1>Task #4</h1>
+          <div class="text-inputs">
+            <textarea
+              name="input-text"
+              id="reverse-input-text"
+              cols="30"
+              rows="10"
+            >
+Every word in this text will be reversed</textarea
+            >
+            <textarea
+              name="output-text"
+              id="reverse-output-text"
+              cols="30"
+              rows="10"
+              readonly
+            ></textarea>
+          </div>
+          <button onclick="reverseWords()">Reverse</button>
+        </section>
+
+        <section>
+          <h1>Task #5</h1>
+          <div class="phone-number-inputs">
+            <label for="phone-number">
+              Enter a phone number <br />[ in the form (555) 555-5555 ]:
+              <input name="phone-number" id="phone-number-input" type="text" />
+            </label>
+            <button onclick="splitNumber()">Split</button>
+            <div class="phone-number-data">
+              <label for="area-code">
+                Area code:
+                <input
+                  name="area-code"
+                  readonly
+                  id="area-code-input"
+                  type="text"
+                />
+              </label>
+              <label for="number">
+                Number:
+                <input name="number" readonly id="number-input" type="text" />
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1>Task #6</h1>
+          <span>Enter some text</span>
+          <textarea name="text-field" id="text-field" cols="30" rows="10">
+Search this string</textarea
+          >
+          <div class="inputs">
+            <label for="search">
+              Enter the character to search for:
+              <input name="search" id="search-input" type="text" />
+            </label>
+            <button class="search" onclick="search()">Search</button>
+            <span id="result-span"></span>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

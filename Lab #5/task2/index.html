@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <span class="error">Fill in all the fields!</span>
+        <label>
+            First side
+            <input type="number" id="x1"/>
+        </label>
+        <label>
+            Second side
+            <input type="number" id="x2"/>
+        </label>
+        <label>
+            Third side
+            <input type="number" id="x3"/>
+        </label>
+        <button type="button" onclick="calculate()">calculate</button>
+        <div class="output">
+            <label>
+                Square
+                <input class="results" type="number" readonly id="area"/>
+            </label>
+            <label>
+                Perimeter
+                <input class="results" type="number" readonly id="perimeter"/>
+            </label>
+            <label>
+                Type of triangle
+                <input class="results" type="text" readonly id="type"/>
+            </label>
+        </div>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
