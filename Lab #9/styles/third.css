@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  font-family: Nunito, serif;
+  animation-delay: 500ms;
+  animation: fadeIn 1000ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  -webkit-animation: fadeIn 1000ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clock {
+  background: #e1f396;
+  padding: 20px;
+  color: #090a05;
+  font-size: 3rem;
+  font-weight: bold;
+  box-shadow: 0 0 20px 15px rgba(1, 47, 50, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.next-task {
+  position: absolute;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100%;
+}
+
+img {
+  width: 50px;
+  transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+img:hover {
+  background: rgba(1, 47, 50, 0.2);
+}
+
+.previous-task {
+  position: absolute;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100%;
+}
+
+.previous-task img {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
+.links {
+  width: 100%;
+  background: #01575c;
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  width: max-content;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 1000ms cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  -webkit-animation: fadeOut 1000ms cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}

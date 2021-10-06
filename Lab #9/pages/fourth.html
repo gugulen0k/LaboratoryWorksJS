@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/fourth.css" />
+    <title>Fourth</title>
+  </head>
+  <body>
+    <main id="main">
+      <div class="previous-task">
+        <img onclick="previousPage()" src="../next-arrow.svg" alt="" />
+      </div>
+      <div class="task">
+        <div class="timer-btn" onclick="setTimer()">
+          <img src="../stopwatch.png" alt="" />
+        </div>
+
+        <div id="clock" class="clock">5</div>
+
+        <div class="timer-btn" onclick="startTimer()">
+          <img src="../start.png" alt="" />
+        </div>
+      </div>
+      <div class="next-task">
+        <img onclick="nextPage()" src="../next-arrow.svg" alt="" />
+      </div>
+    </main>
+  </body>
+  <script src="../scripts/fourth.js"></script>
+</html>
