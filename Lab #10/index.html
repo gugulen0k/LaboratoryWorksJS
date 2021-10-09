@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lab 10</title>
+  </head>
+  <body>
+    <main id="main">
+      <div class="task-box">
+        <span class="title">Task #1</span>
+        <div class="task">
+          <div id="inputs" class="inputs">
+            <input type="text" />
+          </div>
+          <button onclick="addInput()">+</button>
+        </div>
+      </div>
+      <div class="task-box">
+        <span class="title">Task #2</span>
+        <div class="task">
+          <ol id="list">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Officiis sint, labore molestiae voluptas tenetur?</li>
+            <li>Fugit dolorem quia ex nam in totam, labore laborum?</li>
+            <li>Nulla et sed rerum sapiente voluptate maxime.</li>
+            <li>Sunt pariatur natus qui nihil harum.</li>
+            <li>Ipsa sed expedita deleniti laborum eveniet.</li>
+            <li>Amet ad, itaque, aperiam voluptas dolores alias!</li>
+            <li>Maxime voluptates expedita accusamus ratione fuga..</li>
+            <li>Illum numquam ex molestiae quis obcaecati. Obcaecati?</li>
+            <li>Fuga totam repellendus voluptatibus!</li>
+          </ol>
+          <button class="second-btn" onclick="removeLi()">
+            <img src="trash-can.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="task-box">
+        <span class="title">Task #3</span>
+        <div class="task">
+          <ol id="list-third">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Officiis sint, labore molestiae voluptas tenetur?</li>
+            <li>Fugit dolorem quia ex nam in totam, labore laborum?</li>
+            <li>Nulla et sed rerum sapiente voluptate maxime.</li>
+            <li>Sunt pariatur natus qui nihil harum.</li>
+          </ol>
+          <button onclick="addLi()">+</button>
+        </div>
+      </div>
+      <div class="task-box">
+        <span class="title">Task #4</span>
+        <div class="task">
+          <ul id="list-fourth">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Officiis sint, labore molestiae voluptas tenetur?</li>
+          </ul>
+          <button onclick="fillList()">+</button>
+        </div>
+      </div>
+      <div class="task-box">
+        <span class="title">Task #5</span>
+        <div class="task">
+          <button class="second-btn" onclick="addDiv()">Add "div"</button>
+        </div>
+      </div>
+      <div class="task-box">
+        <span class="title">Task #6</span>
+        <div class="task">
+          <ol id="list-fifth">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
