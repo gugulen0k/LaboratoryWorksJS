@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+  user-select: none;
+}
+
+.types {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arthropods,
+.chords,
+.wilds,
+.rodents,
+.mammals,
+.rabbits,
+.dogs,
+.hare-type,
+.dog-type {
+  opacity: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  -moz-transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  -ms-transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.chords .card,
+.arthropods .card,
+.wilds .card,
+.rodents .card,
+.dogs .card,
+.rabbits .card,
+.hare-type .card,
+.dog-type .card {
+  margin: 0 10px;
+}
+
+.mammals {
+  width: 100%;
+}
+
+.mammals .card {
+  background: #c4afff80;
+}
+.chords .card {
+  background: #ffadad80;
+}
+.arthropods .card {
+  background: #bfffaf80;
+}
+.rodents .card {
+  background: #affffb80;
+}
+.wilds .card {
+  background: #feffaf80;
+}
+.rabbits .card {
+  background: #ffdaaf80;
+}
+.dogs .card {
+  background: #ffafd480;
+}
+
+.hover-animation {
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+.hover-animation:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.hover-animation:active {
+  transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(128, 128, 128, 0.4);
+  width: max-content;
+  padding: 10px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.image {
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  pointer-events: none;
+}
+
+.image img {
+  object-fit: cover;
+  width: 150px;
+  height: 100px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.counter {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+}

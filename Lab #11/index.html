@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lab 11</title>
+  </head>
+  <body>
+    <main>
+      <div class="types">
+        <div class="card">
+          <div class="image"><img src="./images/simplest.jpg" alt="" /></div>
+          <div class="text">
+            <span class="name">Простейшие</span>
+            <span class="counter">70.000</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image"><img src="./images/sponge.jpg" alt="" /></div>
+          <div class="text">
+            <span class="name">Губки</span>
+            <span class="counter">500</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="./images/coelenterates.jpg" alt="" />
+          </div>
+          <div class="text">
+            <span class="name">Кишечнополостные</span>
+            <span class="counter">900</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image"><img src="./images/worm.jpg" alt="" /></div>
+          <div class="text">
+            <span class="name">Черви</span>
+            <span class="counter">40.000</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image"><img src="./images/shellfish.jpg" alt="" /></div>
+          <div class="text">
+            <span class="name">Моллюски</span>
+            <span class="counter">140.000</span>
+          </div>
+        </div>
+        <div class="card hover-animation" onclick='showChildren("arthropods")'>
+          <div class="image"><img src="./images/arthropod.jpg" alt="" /></div>
+          <div class="text">
+            <span class="name">Членистоногие</span>
+            <span class="counter">1.500.000</span>
+          </div>
+        </div>
+        <div class="card hover-animation" onclick='showChildren("chords")'>
+          <div class="image"><img src="./images/chord.jpg" alt="" /></div>
+          <div class="text">
+            <span class="name">Хордовые</span>
+            <span class="counter">40.000</span>
+          </div>
+        </div>
+      </div>
+      <div class="types classes">
+        <div id="arthropods" class="arthropods">
+          <div class="card">
+            <div class="image"><img src="./images/crab.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Ракообразные</span>
+              <span class="counter">25.000</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/spider.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Паукообразные</span>
+              <span class="counter">70.000</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/insects.jpg" alt="" />
+            </div>
+            <div class="text">
+              <span class="name">Насекомые</span>
+              <span class="counter">1.000.000</span>
+            </div>
+          </div>
+        </div>
+        <div
+          id="chords"
+          data-children="mammals rodents wilds rabbits dogs hare-type dog-type"
+          class="chords"
+        >
+          <div
+            class="card hover-animation hover-animation"
+            onclick='showChildren("mammals")'
+          >
+            <div class="image"><img src="./images/mammals.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Млекопитающие</span>
+              <span class="counter">4.000</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/bird.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Птицы</span>
+              <span class="counter">9.000</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/reptiles.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Пресмыкающиеся</span>
+              <span class="counter">8.000</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/amphibians.jpg" alt="" />
+            </div>
+            <div class="text">
+              <span class="name">Земноводные</span>
+              <span class="counter">3.500</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/fish.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Рыбы</span>
+              <span class="counter">20.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="types classes">
+        <div
+          id="mammals"
+          data-children="rodents wilds rabbits dogs hare-type dog-type"
+          class="mammals"
+        >
+          <div class="card">
+            <div class="image"><img src="./images/hedgehog.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Насекомоядные</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/bat.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Рукокрылые</span>
+            </div>
+          </div>
+          <div class="card hover-animation" onclick='showChildren("rodents")'>
+            <div class="image">
+              <img src="./images/rodents.jpg" alt="" />
+            </div>
+            <div class="text">
+              <span class="name">Грызуны</span>
+            </div>
+          </div>
+
+          <div class="card hover-animation" onclick='showChildren("wilds")'>
+            <div class="image"><img src="./images/lion.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Хищные</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/whale.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Китообразные</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/gazelle.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Парнокопытные</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/elephant.jpg" alt="" />
+            </div>
+            <div class="text">
+              <span class="name">Хоботные</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/monkey.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Приматы</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="types classes">
+        <div id="rodents" data-children="rabbits hare-type" class="rodents">
+          <div class="card hover-animation" onclick='showChildren("rabbits")'>
+            <div class="image"><img src="./images/rabbit.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Заячьи</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/squirrel.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Беличьи</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/mouse.jpg" alt="" />
+            </div>
+            <div class="text">
+              <span class="name">Мышиные</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="wilds" data-children="dogs dog-type" class="wilds">
+          <div class="card">
+            <div class="image"><img src="./images/cat.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Кошачьи</span>
+            </div>
+          </div>
+          <div class="card hover-animation" onclick='showChildren("dogs")'>
+            <div class="image"><img src="./images/wolf.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Псовые</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/bear.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Медвежьи</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/otter.jpg" alt="" />
+            </div>
+            <div class="text">
+              <span class="name">Куньи</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="types classes">
+        <div id="rabbits" data-children="hare-type" class="rabbits">
+          <div class="card hover-animation" onclick='showChildren("hare-type")'>
+            <div class="image"><img src="./images/hare.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Заяц</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/rabbit2.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Кролик</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="dogs" data-children="dog-type" class="dogs">
+          <div class="card hover-animation" onclick='showChildren("dog-type")'>
+            <div class="image"><img src="./images/dog.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Собака</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/fox.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Лисица</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="types classes">
+        <div id="hare-type" class="hare-type">
+          <div class="card">
+            <div class="image"><img src="./images/hare.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Заяц-беляк</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/hare.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Заяц-русак</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="dog-type" class="dog-type">
+          <div class="card">
+            <div class="image"><img src="./images/wolf2.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Волк</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="./images/jackal.jpg" alt="" /></div>
+            <div class="text">
+              <span class="name">Шакал</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/arctic_fox.jpg" alt="" />
+            </div>
+            <div class="text">
+              <span class="name">Песец</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
