@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lab #12</title>
+  </head>
+  <body>
+    <main>
+      <div id="message">
+        <div class="info">
+          <button class="close-button">
+            <img
+              class="close-img"
+              src="close.svg"
+              alt="close"
+              onclick="hideMessage()"
+            />
+          </button>
+          <img class="sign" src="warning_outline.svg" alt="" />
+          <span>You're not on the bottom of the page.</span>
+        </div>
+      </div>
+      <section id="first">
+        <button onclick="scrollToBottom()">
+          <div class="to-the-end">
+            <span>TO THE END OF THE PAGE</span>
+            <img src="arrow_down_dark.svg" alt="down" />
+          </div>
+        </button>
+      </section>
+
+      <section id="second">
+        <button onclick="scroll400Pixels()">
+          <div class="to-the-end">
+            <span>SCROLL 400 PIXELS DOWN</span>
+            <img src="arrow_down_dark.svg" alt="down" />
+          </div>
+        </button>
+      </section>
+
+      <section id="third">
+        <button id="test" onclick="makeBigger()">
+          <span>MAKE IT 2X BIGGER</span>
+        </button>
+      </section>
+
+      <section id="fourth">
+        <div class="images">
+          <img class="image" src="test_image.jpg" alt="" />
+          <img class="image" src="test_image_2.jpg" alt="" />
+          <img class="image" src="test_image_3.jpg" alt="" />
+        </div>
+        <span class="description">CLICK TO MAKE IMAGE 2X BIGGER</span>
+      </section>
+
+      <section id="fifth">
+        <p id="paragraph">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+          accusantium veniam, similique illum praesentium deserunt officiis non
+          quam possimus facere vero quibusdam exercitationem, voluptatem
+          nesciunt sed modi voluptate accusamus debitis velit. Explicabo error
+          perferendis asperiores eligendi minima quisquam laudantium odio
+          voluptatem, harum ipsa temporibus quasi soluta vel, aliquam pariatur
+          tempora! Veniam nam, molestiae tenetur ullam voluptate rerum cum eos
+          laudantium, officia facilis vel excepturi! Explicabo eveniet ut, nam
+          tenetur dignissimos quibusdam maxime reiciendis velit numquam officia
+          perferendis expedita voluptatum? Deleniti culpa quas exercitationem
+          facere consequatur magnam tempora aut harum voluptatibus, quis
+          eligendi quod laboriosam quibusdam beatae quam illo nisi officia.
+        </p>
+      </section>
+
+      <section id="sixth">
+        <div class="blocks">
+          <div class="block">
+            <span class="text"> 1 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 2 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 3 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 4 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 5 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 6 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 7 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 8 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 9 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 10 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 11 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+          <div class="block">
+            <span class="text"> 12 </span>
+            <img
+              class="close-button block-close"
+              src="close_black.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="seventh">
+        <button onclick="scrollUpTo100Pixels()">
+          <div class="to-the-end">
+            <img src="arrow_down_light.svg" alt="down" />
+            <span>TO THE TOP OF THE PAGE</span>
+          </div>
+        </button>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
