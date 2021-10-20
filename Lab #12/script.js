@@ -69,7 +69,6 @@ const blocks = document.querySelectorAll(".block-close");
 
 for (block of blocks) {
   block.addEventListener("click", (element) => {
-    // console.log(element.srcElement.offsetParent);
     element.srcElement.offsetParent.style.opacity = "0";
     element.srcElement.offsetParent.style.width = "0px";
     setTimeout(() => {
