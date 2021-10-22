@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lab 13</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="title">Task #1</div>
+        <div class="interaction">
+          <div class="input-data">
+            <label for="column">
+              <span>Columns</span>
+              <input id="columns" name="column" type="text" />
+            </label>
+            <label for="column">
+              <span>Rows</span>
+              <input id="rows" name="column" type="text" />
+            </label>
+            <button onclick="drawTable()">DRAW TABLE</button>
+          </div>
+          <div id="table" class="table">
+            <table>
+              <tr>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+              </tr>
+              <tr>
+                <td>234</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="title">Task #2</div>
+        <div class="interaction">
+          <div class="input-data">
+            <label class="color-picker-label" for="color-picker">
+              <span>Pick a color</span>
+              <input id="color-picker" name="color-picker" type="color" />
+            </label>
+          </div>
+          <p id="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            molestias harum dolores eos, sed animi, dolorem consectetur fuga
+            vero dolorum molestiae accusantium. Ex nostrum excepturi nesciunt,
+            doloremque alias molestiae aliquid sed cum quisquam optio dolorum
+            odio quas consequatur sequi voluptatibus beatae quos reiciendis
+            cupiditate voluptatem nisi qui commodi eos dignissimos. Ratione cum
+            veniam vitae corporis. Corrupti veritatis cum a quidem itaque dolore
+            asperiores earum doloremque fugiat eos, voluptatum minima
+            consequuntur iure alias perspiciatis quam exercitationem saepe.
+            Totam, nisi id accusantium iusto voluptates aliquid maxime odit
+            velit, molestias, magni dolore deserunt? Incidunt, exercitationem.
+            Harum saepe ut aut ipsum at doloribus est, tempore cum eum expedita
+            omnis. Nesciunt, molestiae similique. Possimus vitae est non laborum
+            reprehenderit nesciunt, sint inventore atque voluptatem fugiat
+            tenetur aspernatur incidunt reiciendis vel exercitationem nobis
+            dicta totam alias enim accusamus ipsam eligendi aut molestiae.
+            Ratione, explicabo maiores! Minima nisi voluptatibus perspiciatis
+            consequuntur corrupti? Praesentium modi quo non. Commodi eveniet,
+            placeat iusto necessitatibus blanditiis officia quibusdam. Voluptate
+            dolor nostrum officiis eaque minima rem, explicabo quisquam
+            laboriosam?
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="title">Task #3</div>
+        <div class="interaction center">
+          <button id="add-option" onclick="addNewOption()">+</button>
+          <select name="list" id="list" class="list">
+            <option value="">item1</option>
+            <option value="">item2</option>
+            <option value="">item3</option>
+            <option value="">item4</option>
+            <option value="">item5</option>
+          </select>
+        </div>
+      </section>
+
+      <section>
+        <div class="title">Task #4</div>
+        <div class="interaction">
+          <div class="input-data">
+            <label for="shape">
+              <span>Choose geometric shape</span>
+              <select name="shapes" id="shapes" class="list">
+                <option value="none" selected>Choose a shape</option>
+                <option value="square">square</option>
+                <option value="triangle">triangle</option>
+                <option value="rectangle">rectangle</option>
+                <option value="circle">circle</option>
+                <option value="parallelogram">parallelogram</option>
+              </select>
+            </label>
+          </div>
+          <div id="inputs" class="inputs">
+            <label id="first-side" for="first-side">
+              <span>First side</span>
+              <input name="first-side" type="text" />
+            </label>
+            <label id="second-side" for="second-side">
+              <span>Second side</span>
+              <input name="second-side" type="text" />
+            </label>
+            <label id="third-side" for="third-side">
+              <span>Third side</span>
+              <input name="third-side" type="text" />
+            </label>
+            <label id="angle" for="angle">
+              <span>Angle</span>
+              <input name="angle" type="text" />
+            </label>
+            <label id="radius" for="radius">
+              <span>Radius</span>
+              <input name="radius" type="text" />
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
