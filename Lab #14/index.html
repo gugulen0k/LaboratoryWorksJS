@@ -7,6 +7,135 @@
     <link rel="stylesheet" href="style.css" />
     <title>Lab 14</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section>
+        <div class="title">Task #1</div>
+        <div class="task">
+          <label for="square-number">
+            <span>Enter the number</span>
+            <input id="square-number" name="square-number" type="text" />
+          </label>
+          <button onclick="calculateSquare()">CALCULATE</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="title">Task #2</div>
+        <div class="task">
+          <label for="first-input">
+            <span>Enter the first value</span>
+            <input id="first-input" name="first-input" type="text" />
+          </label>
+          <label for="second-input">
+            <span>Enter the second value</span>
+            <input id="second-input" name="second-input" type="text" />
+          </label>
+          <button onclick="swapInputs()">SWAP</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="title">Task #3</div>
+        <div class="task">
+          <button id="counter">0</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="title">Task #4</div>
+        <div class="task">
+          <div id="images" class="images">
+            <img id="first-image" src="first.jpg" alt="" />
+            <img id="second-image" src="second.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="title">Task #5</div>
+        <div class="task">
+          <select name="items" id="items">
+            <option value="first">first</option>
+            <option value="second">second</option>
+            <option value="third">third</option>
+            <option value="fourth">fourth</option>
+            <option value="fifth">fifth</option>
+          </select>
+          <label for="index-number">
+            <span>Enter the number</span>
+            <input id="index-number" name="index-number" type="text" />
+          </label>
+          <button onclick="setOption()">SELECT</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="title">Task #6</div>
+        <div class="task">
+          <table id="table">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+            </tr>
+            <tr>
+              <td>Marin</td>
+              <td>Phillips</td>
+            </tr>
+            <tr>
+              <td>Sidney</td>
+              <td>Dillon</td>
+            </tr>
+            <tr>
+              <td>Patricia</td>
+              <td>Prince</td>
+            </tr>
+            <tr>
+              <td>Cristal</td>
+              <td>Townsend</td>
+            </tr>
+            <tr>
+              <td>Jayla</td>
+              <td>Macdonald</td>
+            </tr>
+            <tr>
+              <td>Estrella</td>
+              <td>Mccann</td>
+            </tr>
+            <tr>
+              <td>Nikolai</td>
+              <td>Hill</td>
+            </tr>
+            <tr>
+              <td>Brock</td>
+              <td>Pope</td>
+            </tr>
+            <tr>
+              <td>Tia</td>
+              <td>Blanchard</td>
+            </tr>
+          </table>
+          <div class="inputs">
+            <input id="first-name" name="first-name" type="text" />
+            <input id="last-name" name="last-name" type="text" />
+          </div>
+          <button onclick="addNewUser()">ADD NEW USER</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="title">Task #7</div>
+        <div class="task">
+          <select name="countries" id="countries">
+            <option selected>Choose the country</option>
+            <option value="russia">Russia</option>
+            <option value="moldova">Moldova</option>
+            <option value="italy">Italy</option>
+          </select>
+          <select name="cities" id="cities"></select>
+        </div>
+      </section>
+    </main>
+  </body>
   <script src="script.js"></script>
 </html>

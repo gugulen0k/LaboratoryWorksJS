@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.images {
+  width: 400px;
+  height: 265px;
+  position: relative;
+  pointer-events: all;
+}
+
+img {
+  position: absolute;
+  width: 400px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition: 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+table {
+  width: 100%;
+  border: 2px solid darkgray;
+  border-collapse: collapse;
+}
+
+tr td,
+tr th {
+  padding: 5px;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid darkgray;
+}
+
+body {
+  background: rgb(255, 248, 235);
+}
+
+main {
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.title {
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  color: #222222;
+  margin: 30px 0;
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+  width: 100%;
+}
+
+section {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+input,
+select {
+  width: 100%;
+  background: white;
+  color: #222222;
+  font-family: Poppins, sans-serif;
+  padding: 5px;
+  border: 2px solid rgb(231, 200, 141);
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+select {
+  margin: 10px 0;
+}
+
+#counter {
+  font-size: 1.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 5px;
+  font-family: Poppins, sans-serif;
+  border: 2px solid;
+  font-weight: bold;
+  border: 2px solid rgb(231, 200, 141);
+  color: #222222;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
