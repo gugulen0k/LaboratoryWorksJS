@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e0ece4;
+}
+
+section {
+  font-family: Rubik, sans-serif;
+
+  color: #797a7e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+textarea,
+input,
+.divs div,
+select {
+  outline: none;
+  padding: 10px;
+  background: #f7f2e7;
+  color: #797a7e;
+  font-family: Rubik, sans-serif;
+  font-size: 1.1rem;
+  border: 3px solid #d8cdcd;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  color: #f7f2e7;
+  background: #797a7e;
+  font-family: Rubik, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: 300ms ease;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -ms-transition: 300ms ease;
+  -o-transition: 300ms ease;
+}
+
+button:hover {
+  background: #8f9096;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  grid-template-columns: 100px 1fr;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  display: none;
+  font-style: italic;
+  color: rgb(248, 153, 153);
+}
+.required {
+  font-style: italic;
+  font-weight: bold;
+  color: #f89999;
+}
+
+.error-block {
+  display: none;
+  font-size: 1.5rem;
+  padding: 20px;
+  background: rgb(248, 153, 153);
+  border: 2px dashed #797a7e;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

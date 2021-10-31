@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lab 16</title>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <div class="title">Task #1</div>
+        <form name="books">
+          <label class="price" for="price">
+            TOTAL
+            <input type="text" readonly name="price" id="total-price" />
+          </label>
+          <div class="books">
+            <label for="first-book">
+              <input
+                type="checkbox"
+                name="book"
+                value="50"
+                onclick="checkTotal()"
+                id="first-book"
+              />
+              Carte 1 - 50 lei
+            </label>
+            <label for="second-book">
+              <input
+                type="checkbox"
+                name="book"
+                value="60"
+                onclick="checkTotal()"
+                id="second-book"
+              />
+              Carte 2 - 60 lei
+            </label>
+            <label for="third-book">
+              <input
+                type="checkbox"
+                name="book"
+                value="30.50"
+                onclick="checkTotal()"
+                id="third-book"
+              />
+              Carte 3 - 30.50 lei
+            </label>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <div class="title">Task #2</div>
+        <div class="registration">
+          <span>Name</span>
+          <div>
+            <input type="text" id="name" />
+            <div id="name-error" class="error">*Enter your name</div>
+          </div>
+
+          <span>E-mail</span>
+          <div>
+            <input type="text" id="email" />
+            <div id="email-error" class="error">*Incorrect email</div>
+          </div>
+
+          <span>Password</span>
+          <div>
+            <input type="password" id="password" />
+            <div id="password-error" class="error">
+              *Password must contain from 4 up to 8 symbols
+            </div>
+          </div>
+
+          <span>Confirm password</span>
+          <div>
+            <input type="password" id="confirm-password" />
+            <div id="confirm-error" class="error">*Passwords don't match</div>
+          </div>
+
+          <span>Hobby</span>
+          <div class="hobby">
+            <div>
+              <input type="checkbox" name="hobby" id="swimming" />
+              <span>Swimming</span>
+            </div>
+            <div>
+              <input type="checkbox" name="hobby" id="reading" />
+              <span>Reading</span>
+            </div>
+            <div>
+              <input type="checkbox" name="hobby" id="nothing" />
+              <span>Nothing</span>
+            </div>
+            <div id="hobby-error" class="error">
+              *Choose at list one element
+            </div>
+          </div>
+
+          <span>Birth date</span>
+          <div>
+            <input type="text" name="date" id="date" />
+            <div id="date-error" class="error">
+              *Enter birth date in this format: 01/01/2000
+            </div>
+          </div>
+
+          <span>Birth country</span>
+          <div>
+            <select name="country" id="country">
+              <option disabled selected value="0">
+                -- Choose a country --
+              </option>
+              <option value="1">Italy</option>
+              <option value="2">Russia</option>
+              <option value="3">Moldova</option>
+              <option value="4">France</option>
+              <option value="5">Netherland</option>
+            </select>
+            <div id="country-error" class="error">*Choose country</div>
+          </div>
+
+          <span>Comment</span>
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+          <span>Do you want to receive our newsletter?</span>
+          <div class="newsletter">
+            <div>
+              <input type="radio" name="newsletter" id="yes" />
+              <span>Yes</span>
+            </div>
+            <div>
+              <input type="radio" name="newsletter" id="sure" />
+              <span>Sure</span>
+            </div>
+            <div>
+              <input type="radio" name="newsletter" id="with-pleasure" />
+              <span>With pleasure</span>
+            </div>
+            <div id="newsletter-error" class="error">*Choose one element</div>
+          </div>
+        </div>
+        <button onclick="checkInputs()">SIGN IN</button>
+      </section>
+
+      <section>
+        <div class="title">Task #3</div>
+        <div class="content">
+          <div id="error-block" class="error-block">
+            Incorrect E-mail address
+          </div>
+          <div class="registration">
+            <span>Login<span id="login-error" class="required">*</span></span>
+            <input type="text" id="login" />
+
+            <span
+              >Password<span id="password-error" class="required">*</span></span
+            >
+            <input type="password" id="password2" />
+
+            <span
+              >Confirm password<span id="confirm-error" class="required"
+                >*</span
+              ></span
+            >
+            <input type="password" id="confirm-password2" />
+
+            <span
+              >E-mail address<span id="email-error" class="required"
+                >*</span
+              ></span
+            >
+            <input type="text" id="email2" />
+
+            <span>Show email</span>
+            <select name="show-email" id="show-email">
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+
+            <span>Phone number</span>
+            <input type="tel" id="phone-number" />
+
+            <span
+              >About me<span id="about-me-error" class="required">*</span></span
+            >
+            <textarea
+              name="comment"
+              id="about-me"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <span>Receive newsletter</span>
+            <input type="checkbox" name="newsletter" id="newsletter2" />
+          </div>
+        </div>
+        <button onclick="checkInputs2()">SIGN IN</button>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
