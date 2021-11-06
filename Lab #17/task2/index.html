@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pizzeria</title>
+  </head>
+  <body>
+    <main>
+      <div class="order-type">Order type:</div>
+      <div class="delivery-type">
+        <label for="delivery">
+          <input
+            type="radio"
+            name="delivery-type"
+            data-value="25"
+            id="delivery"
+          />
+          Delivery
+        </label>
+        <label for="on-place">
+          <input
+            type="radio"
+            name="delivery-type"
+            data-value="0"
+            id="on-place"
+          />
+          In restaurant
+        </label>
+      </div>
+      <div class="product">
+        <img src="pizza.jpg" alt="" />
+        <div class="info">
+          <div class="title">Mario</div>
+          <div class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            et atque ex cupiditate, asperiores ipsam mollitia officia alias
+            maiores dolorem.
+          </div>
+        </div>
+        <div class="quantity-info">
+          <span class="header">Quantity</span>
+          <div class="data" id="quantity">
+            <button id="decrease-button">-</button>
+            <span id="count">1</span>
+            <button id="increase-button">+</button>
+          </div>
+        </div>
+        <div class="price-info">
+          <span class="header">Price</span>
+          <span class="data" id="price">75 MDL</span>
+        </div>
+        <div class="total-info">
+          <span class="header">Total</span>
+          <div class="data" id="total-price">75 MDL</div>
+        </div>
+      </div>
+      <div class="total">
+        <div class="total-price">
+          <span>Subtotal</span>
+          <div id="subtotal">75 MDL</div>
+
+          <span>Delivery</span>
+          <div id="delivery-price">0 MDL</div>
+
+          <span class="total-title">Total</span>
+          <div class="total-title" data-value="75" id="total">75 MDL</div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

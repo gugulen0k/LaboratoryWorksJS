@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="./images/icon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="main">
+      <form>
+        <div class="title">
+          <img src="./images/icon.svg" alt="" />
+          <h1 class="title-text">CURRENCY CONVERTER</h1>
+        </div>
+        <div class="input-fields">
+          <div class="column from">
+            <select id="from-select" class="select-menu"></select>
+            <span>Give:</span>
+            <div class="message">
+              <input
+                autocomplete="off"
+                placeholder="Input some number"
+                maxlength="6"
+                id="from-input"
+                class="input-field"
+                type="text"
+              />
+            </div>
+          </div>
+          <button id="swap-btn" onclick="return false;">
+            <img id="swap-img" src="./images/swap.svg" alt="" />
+          </button>
+          <div class="column to">
+            <select id="to-select" class="select-menu"></select>
+            <span>Get:</span>
+            <input disabled id="to-input" class="input-field" type="text" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <main>
+      <div class="title">Shop</div>
+      <div class="data">
+        <div class="products">
+          <div class="card">
+            <div class="product-name">Nike Bruin Mid</div>
+            <div class="image"><img src="./images/nike.jpg" alt="" /></div>
+            <div class="price">
+              $
+              <div id="price-nike">29.99</div>
+            </div>
+            <count>
+              <span class="how-many">How many?</span>
+              <input id="nike-count" type="number" min="1" value="1" />
+            </count>
+            <div class="bottom">
+              <button onclick="addNikeToBasket()">Add to Basket</button>
+              <div class="favorite"><img src="./images/star.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="product-name">Converse All Star Mono Ox</div>
+            <div class="image"><img src="./images/converse1.jpg" alt="" /></div>
+            <div class="price">
+              $
+              <div id="price-converse1">45.00</div>
+            </div>
+            <count>
+              <span class="how-many">How many?</span>
+              <input id="converse1-count" type="number" min="1" value="1" />
+            </count>
+            <div class="bottom">
+              <button onclick="addConverse1ToBasket()">Add to Basket</button>
+              <div class="favorite"><img src="./images/star.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="product-name">Converse Simpsons Bart Hi Trainers</div>
+            <div class="image"><img src="./images/converse2.jpg" alt="" /></div>
+            <div class="price">
+              $
+              <div id="price-converse2">24.99</div>
+            </div>
+            <count>
+              <span class="how-many">How many?</span>
+              <input id="converse2-count" type="number" min="1" value="1" />
+            </count>
+            <div class="bottom">
+              <button onclick="addConverse2ToBasket()">Add to Basket</button>
+              <div class="favorite"><img src="./images/star.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="sopping-cart">
+            <div class="cart-title">Shopping Cart</div>
+            <div class="text">
+              <span>Total items:</span>
+              <span
+                data-nike="false"
+                data-converse1="false"
+                data-converse2="false"
+                id="total-items"
+                class="total-items"
+                >0</span
+              >
+            </div>
+            <div class="text">
+              <span>Total units:</span>
+              <span id="total-units" class="total-units">0</span>
+            </div>
+            <div class="text">
+              <span>Total:</span>
+              <div class="price">
+                $<span id="total" class="total">0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
