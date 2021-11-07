@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lab 18</title>
+  </head>
+  <body>
+    <main id="my-form">
+      <fieldset class="personal-info">
+        <legend>Personal Particular</legend>
+        <span>Name</span>
+        <div class="block">
+          <input id="name" type="text" required />
+          <span class="error name-error">* must contain only letters</span>
+        </div>
+
+        <span>Password</span>
+        <div class="block">
+          <input id="password" type="password" required />
+          <span class="error password-error"
+            >* must contain at least 6 symbols</span
+          >
+        </div>
+        <span>Gender</span>
+        <div id="gender">
+          <label>
+            <input required type="radio" name="gender" value="Male" id="male" />
+            Male
+          </label>
+          <label>
+            <input
+              required
+              type="radio"
+              name="gender"
+              value="Female"
+              id="female"
+            />
+            Female
+          </label>
+        </div>
+
+        <span>Age</span>
+        <select required name="age" id="age">
+          <option value="< 1 year old">&#60; 1 year old</option>
+          <option value="1 - 14 year old">1 - 14 year old</option>
+          <option value="14 - 18 year old">14 - 18 year old</option>
+          <option value="18+">18+</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Languages</legend>
+        <div id="languages-box">
+          <label>
+            <input
+              required
+              type="checkbox"
+              value="Java"
+              name="java"
+              id="java"
+            />
+            Java
+          </label>
+          <label>
+            <input required type="checkbox" value="C/C++" name="c++" id="c++" />
+            C/C++
+          </label>
+          <label>
+            <input required type="checkbox" value="C#" name="c#" id="c#" />
+            C#
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Instruction</legend>
+        <textarea
+          required
+          name="instruction"
+          id="instruction"
+          cols="45"
+          rows="10"
+          placeholder="Enter your instruction here..."
+        ></textarea>
+      </fieldset>
+      <div class="buttons">
+        <button onclick="checkFields()">SEND</button>
+        <button onclick="clearFields()">CLEAR</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
