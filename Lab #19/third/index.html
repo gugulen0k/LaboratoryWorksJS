@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task 3</title>
+  </head>
+  <body>
+    <div class="board">
+      <div class="title">Your choice</div>
+      <div class="data">
+        <div class="items">
+          <div class="item">
+            <label for="pepsi">
+              <input type="radio" name="drinks" value="pepsi" id="pepsi" />
+              <div class="image-block">
+                <img src="../images/drinks/pepsi.jpg" alt="" />
+              </div>
+            </label>
+          </div>
+          <div class="item">
+            <label for="cola">
+              <input type="radio" name="drinks" value="cola" id="cola" />
+              <div class="image-block">
+                <img src="../images/drinks/cola.jpg" alt="" />
+              </div>
+            </label>
+          </div>
+          <div class="item">
+            <label for="fanta">
+              <input type="radio" name="drinks" value="fanta" id="fanta" />
+              <div class="image-block">
+                <img src="../images/drinks/fanta.jpg" alt="" />
+              </div>
+            </label>
+          </div>
+          <div class="item">
+            <label for="sprite">
+              <input type="radio" name="drinks" value="sprite" id="sprite" />
+              <div class="image-block">
+                <img src="../images/drinks/sprite.jpg" alt="" />
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="result-board">
+          <div id="pepsi-progress" class="progress-bar">
+            <div class="bar"></div>
+            <div class="percentage">0%</div>
+          </div>
+          <div id="cola-progress" class="progress-bar">
+            <div class="bar"></div>
+            <div class="percentage">0%</div>
+          </div>
+          <div id="fanta-progress" class="progress-bar">
+            <div class="bar"></div>
+            <div class="percentage">0%</div>
+          </div>
+          <div id="sprite-progress" class="progress-bar">
+            <div class="bar"></div>
+            <div class="percentage">0%</div>
+          </div>
+        </div>
+      </div>
+      <button id="vote-button" onclick="calculateVoices()">Vote</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
