@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Lab 25</title>
+    </head>
+    <body>
+        <div class="data">
+            <table id="dataTable">
+                <tbody>
+                <tr>
+                    <th>Nr</th>
+                    <th>Name</th>
+                    <th>Level 1</th>
+                    <th>Level 2</th>
+                    <th>Level 3</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nick</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mary</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                </tbody>
+            </table>
+            <button onclick="drawChart(chartCanvas, data)">Show Diagram</button>
+        </div>
+        <canvas id="chartCanvas" width="400" height="500"></canvas>
+        <script src="script.js"></script>
+    </body>
+</html>
