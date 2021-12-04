@@ -96,5 +96,5 @@ tr:last-child td:last-child {
 
 .show {
     animation: smooth 1s ease;
-    display: block !important;
+    /*display: block !important;*/
 }
