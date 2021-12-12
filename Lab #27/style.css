@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px -1px #333;
+    background: #333;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.game-table {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 150px;
+    margin: 0 auto;
+}
+
+table td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+
+table td:before {
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+table td.cross:before {
+    content: "x";
+    color: lightblue;
+}
+
+table td.circle:before {
+    content: "o";
+    color: pink;
+}
+
+table tr:first-child td {
+    border-top-left-radius: 10px;
+}
+
+.reset {
+    background: #555;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Roboto", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.reset:hover {
+    opacity: 0.8;
+}
+
+.score-table {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.next-task {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+}
+
+.next-task:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

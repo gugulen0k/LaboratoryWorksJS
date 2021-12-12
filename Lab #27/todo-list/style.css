@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.wrapper{
+    width: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin: 40px auto 0;
+    background: white;
+    border-radius: 5px;
+}
+
+.form {
+    width: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label input {
+    width: 100%;
+}
+
+.error {
+    height: 1rem;
+    margin: 5px 0;
+    color: #fa6565;
+}
+
+input {
+    height: 30px;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+input[type=checkbox] {
+    height: 25px;
+    margin: 0;
+}
+
+ol {
+    list-style-type: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ol li {
+    height: max-content;
+    display: grid;
+    grid-template-areas: 'checkbox description delete';
+    grid-template-columns: 20px 1fr 25px;
+    align-items: center;
+    padding: 5px;
+    color:#000;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cross_line{
+    text-decoration: line-through;
+}
+
+#description:hover{
+    cursor: pointer;
+}
+
+.delete {
+    grid-area: delete;
+    height: 25px;
+    width: 25px;
+    float: right;
+}
+
+#description {
+    grid-area: description;
+}
+
+.new-value {
+    height: max-content;
+    width: max-content;
+}
+
+
+.next-task {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+}
+
+.next-task:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
